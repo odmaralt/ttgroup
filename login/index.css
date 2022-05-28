@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(151, 174, 178);
+  text-align: center;
+}
+#box {
+  float: left;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding-top: 10%;
+}
+
+#loginImage {
+  float: right;
+  width: 50%;
+  background-size: cover;
+  height: 100vh;
+}
+
+#container {
+  border: 0.1px solid black;
+  width: 450px;
+  background-color: rgb(255, 255, 255);
+}
+#logo {
+  padding: 40px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#bin {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  padding-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.password {
+  padding-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#emailInput {
+  width: 230px;
+  height: 26px;
+  outline: none;
+  padding-left: 4px;
+}
+
+#passwordInput {
+  width: 230px;
+  height: 26px;
+  outline: none;
+  padding-left: 4px;
+}
+
+#forgotPass {
+  display: block;
+  font-size: 12px;
+  padding-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(67, 158, 222);
+  text-decoration: none;
+}
+
+#loginButton {
+  color: rgb(0, 0, 0);
+  width: 180px;
+  height: 45px;
+  border-style: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#noAcc {
+  padding: 32px;
+  font-size: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#signUp {
+  color: rgb(67, 158, 222);
+  text-decoration: none;
+}
+
+#required1 {
+  color: red;
+  font-size: 10px;
+  display: none;
+  text-align: left;
+  margin-left: 106px;
+}
+
+#required2 {
+  color: red;
+  font-size: 10px;
+  display: none;
+  text-align: left;
+  margin-left: 106px;
+}
+@media only screen and (max-width: 850px) {
+  body {
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1598804413160-07560f3f78ec?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178");
+  }
+  #loginImage {
+    display: none;
+  }
+  #box {
+    float: none;
+    padding-top: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 80%;
+  }
+  #required1{
+    margin-left: 0;
+    text-align: center;
+  }
+  #required2{
+    margin-left: 0;
+    text-align: center;
+  }
+}
