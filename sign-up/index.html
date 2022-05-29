@@ -17,11 +17,19 @@
         getAuth,
         createUserWithEmailAndPassword,
       } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+      // import { firestore } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
       import {
         getDatabase,
         set,
         ref,
       } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+      import {
+        getFirestore,
+        collection,
+        doc,
+        addDoc,
+        setDoc,
+      } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -41,40 +49,42 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
       const auth = getAuth();
-      const database = getDatabase(app);
+      const db = getFirestore(app);
 
       const signupButton = document.getElementById("signUpButton");
-      signupButton.addEventListener("click", (e) => {
-        let email = document.getElementById("emailInput").value;
-        let password = document.getElementById("passwordInput").value;
-        let firstNameInput = document.getElementById("firstNameInput").value;
-        let lastNameInput = document.getElementById("lastNameInput").value;
-
-        createUserWithEmailAndPassword(
+      signupButton.addEventListener("click", async (e) => {
+        const email = document.getElementById("emailInput").value;
+        const password = document.getElementById("passwordInput").value;
+        const firstNameInput = document.getElementById("firstNameInput").value;
+        const lastNameInput = document.getElementById("lastNameInput").value;
+        const loginButton = document.getElementById("logIn");
+        if (
+          email === "" ||
+          password === "" ||
+          firstNameInput === "" ||
+          lastNameInput === ""
+        ) {
+          return;
+        }
+        await createUserWithEmailAndPassword(
           auth,
           email,
           password,
           firstNameInput,
           lastNameInput
         )
-          .then((userCredential) => {
+          .then(async (userCredential) => {
             // Signed in
             const user = userCredential.user;
-            // ... user.uid
-            set(ref(database, "users/" + user.uid), {
-              firstNameInput: firstNameInput,
-              lastNameInput: lastNameInput,
-              email: email,
-              password: password,
-            })
-              .then(() => {
-                // Data saved successfully!
-                alert("User created successfully!");
-              })
-              .catch((error) => {
-                // The write failed...
-                alert(error);
-              });
+            const usersCollectionRef = collection(db, "users");
+
+            await setDoc(doc(usersCollectionRef, user.uid), {
+              id: user.uid,
+              emailAddress: user.email,
+              firstName: firstNameInput,
+              lastName: lastNameInput,
+            });
+            loginButton.click();
           })
           .catch((error) => {
             const errorCode = error.code;
@@ -82,7 +92,6 @@
             // ..
             alert(errorMessage);
           });
-
       });
     </script>
     <script src="index.js"></script>
