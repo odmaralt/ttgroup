@@ -3,27 +3,23 @@
   padding: 0;
 }
 body {
-  background-color: rgb(33, 37, 41);
+  background-color: rgb(233, 233, 233);
 }
 #img {
-  display: flex;
   justify-content: center;
-  height: 30%;
-  width: 50%;
-  margin-top: 55px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 80%;
+  width: 100%;
 }
 .navBar {
   overflow: hidden;
-  background-color: rgb(23, 27, 31);
+  background-color: rgb(27, 27, 27);
   height: 70px;
 }
 .navBar a {
   float: left;
   color: #f2f2f2;
   text-align: right;
-  padding: 25px 20px;
+  padding: 27px 20px;
   text-decoration: none;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -36,7 +32,7 @@ body {
   color: black;
 }
 .navBar a.active {
-  background-color: #45566d;
+  background-color: #636363;
   color: white;
   padding-left: 20px;
 }
@@ -46,34 +42,30 @@ body {
   color: #f2f2f2;
   padding-top: 23px;
   text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 500;
 }
 #header {
   font-size: 37px;
-  color: #f2f2f2;
-  padding-top: 23px;
+  color: #ffffff;
   padding-bottom: 23px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 500;
-}
-
-.who {
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: -175px;
 }
 
 #ourCompany {
   color: #f2f2f2;
   font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 #ourTeam {
   color: #f2f2f2;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   margin-top: 60px;
   font-weight: 300;
@@ -89,7 +81,8 @@ body {
 }
 
 #secondPart {
-  background-color: rgb(42, 46, 49);
+  padding-top: 50px;
+  background-color: rgb(26, 26, 26);
 }
 
 #flex {
@@ -107,25 +100,23 @@ body {
   padding-top: 40px;
   font-size: 14px;
 }
-#contact {
-  margin-bottom: 100px;
-}
 
 #contactInfo {
   color: #f2f2f2;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
-  margin-top: 50px;
   font-weight: 300;
   font-size: 34px;
-  padding-top: 40px;
+  padding-top: 70px;
   padding-bottom: 30px;
 }
-
+#thirdPart {
+  background-color: rgb(41, 41, 41);
+}
 #contact a {
   display: block;
   color: #f2f2f2;
-  margin-bottom: 12px;
+  padding-bottom: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 24px;
@@ -135,16 +126,15 @@ body {
 #paragraph {
   color: #f2f2f2;
   margin-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 60px;
   padding-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin-top: 24px;
   font-size: 12px;
 }
 
 #footer {
-  background-color: #38393b;
+  background-color: rgb(41, 41, 41);
 }
 
 @media only screen and (max-width: 850px) {
@@ -153,9 +143,6 @@ body {
   }
   #person {
     padding-left: 3%;
-  }
-  #img {
-    width: 62%;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -168,9 +155,6 @@ body {
   #logo {
     display: none;
   }
-  #img {
-    width: 68%;
-  }
   #header {
     font-size: 32px;
   }
@@ -179,6 +163,7 @@ body {
 @media only screen and (max-width: 600px) {
   #flex {
     display: block;
+    padding-bottom: 80px;
   }
   #person {
     display: flex;
@@ -191,10 +176,16 @@ body {
   #aboutPerson {
     margin-left: 8%;
     margin-right: 8%;
+    font-size: 13px;
   }
 
   #ourCompany {
-    font-size: 10px;
+    font-size: 9px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #ourTeam{
+    margin-top: 15px;
   }
   #contactInfo {
     font-size: 26px;
@@ -221,6 +212,8 @@ body {
     padding-right: 20px;
   }
   #header {
-    font-size: 28px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: -115px;
   }
 }

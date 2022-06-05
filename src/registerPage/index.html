@@ -52,7 +52,17 @@
       const db = getFirestore(app);
 
       const signupButton = document.getElementById("signUpButton");
+
+      document.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          // Trigger the button element with a click
+          signupButton.click();
+        }
+      });
+
       signupButton.addEventListener("click", async (e) => {
+
         const email = document.getElementById("emailInput").value;
         const password = document.getElementById("passwordInput").value;
         const firstNameInput = document.getElementById("firstNameInput").value;

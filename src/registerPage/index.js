@@ -65,6 +65,7 @@ container.append(required);
 
 const signUpButton = document.createElement("button");
 signUpButton.id = "signUpButton";
+signUpButton.type = "submit";
 signUpButton.innerText = "Sign Up";
 container.append(signUpButton);
 
@@ -75,14 +76,14 @@ container.append(haveAcc);
 
 const login = document.createElement("a");
 login.id = "logIn";
-login.href = "../login/index.html";
+login.href = "../index.html";
 login.innerText = "Log In";
 haveAcc.append(login);
 
 const image = document.createElement("img");
 image.id = "signupImage";
 image.src =
-  "https://images.unsplash.com/photo-1622915904739-efd69cd8c519?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960";
+  "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80";
 signupPage.append(image);
 
 const firstNameInput1 = document.getElementById("firstNameInput");

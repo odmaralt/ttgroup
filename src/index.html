@@ -48,10 +48,18 @@
       const database = getFirestore(app);
 
       const loginButton = document.getElementById("loginButton");
-      loginButton.addEventListener("click", async (e) => {
-        let email = document.getElementById("emailInput").value;
-        let password = document.getElementById("passwordInput").value;
 
+      document.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          // Trigger the button element with a click
+          loginButton.click();
+        }
+      });
+
+      loginButton.addEventListener("click", async (e) => {
+        const email = document.getElementById("emailInput").value;
+        const password = document.getElementById("passwordInput").value;
         await signInWithEmailAndPassword(auth, email, password)
           .then(async (userCredential) => {
             // Signed in
@@ -63,7 +71,7 @@
               lastLoggedIn: lastLoggedIn,
             });
             const homePage = document.createElement("a");
-            homePage.setAttribute("href", "../homepage/home.html");
+            homePage.setAttribute("href", "./homepage/home.html");
             homePage.click();
             // ...
           })
