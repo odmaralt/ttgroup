@@ -6,6 +6,7 @@ body {
   background-image: url(https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .navBar {
   overflow: hidden;
@@ -47,7 +48,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.01px;
   font-size: 26px;
-  padding: 100px 0px 80px 50px;
+  padding: 100px 0px 60px 50px;
   font-weight: 500;
 }
 #border {
@@ -57,12 +58,165 @@ body {
   width: 40%;
   height: 90%;
 }
-#border p {
+#border span {
   padding: 13px 0px 13px 50px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: overline;
   font-size: 18px;
 }
-#border p:hover {
-  color: rgb(129, 191, 202)
+#border span:hover {
+  color: rgb(129, 191, 202);
 }
+#goals {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+#rightSide {
+  float: right;
+  width: 54%;
+  height: 420px;
+  margin-right: 3%;
+  margin-top: 7%;
+  border-radius: 16px;
+  background-color: white;
+  display: none;
+}
+#rightSide2 {
+  float: right;
+  width: 54%;
+  height: 420px;
+  margin-right: 3%;
+  margin-top: 7%;
+  border-radius: 16px;
+  background-color: white;
+  display: none;
+}
+#recognize1 {
+  padding: 0px 50px 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#establish1 {
+  padding: 0px 50px 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#rightSide3 {
+  float: right;
+  width: 54%;
+  height: 420px;
+  margin-right: 3%;
+  margin-top: 7%;
+  border-radius: 16px;
+  background-color: white;
+  display: none;
+}
+#strive1 {
+  padding: 0px 50px 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#rightSide4 {
+  float: right;
+  width: 54%;
+  height: 420px;
+  margin-right: 3%;
+  margin-top: 7%;
+  border-radius: 16px;
+  background-color: white;
+  display: none;
+}
+#fulfill1 {
+  padding: 0px 50px 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#recognize {
+  margin-top: 45px;
+}
+@media only screen and (max-width: 850px) {
+  #recognize1 {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  #establish1 {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  #strive1 {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  #fulfill1 {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  #header {
+    padding: 70px 0px 60px 30px;
+  }
+  #recognize {
+    margin-top: 0px;
+  }
+  #border span {
+    padding: 13px 0px 13px 30px;
+  }
+  #logo {
+    font-size: 16px;
+    padding-top: 27px;
+  }
+  #border {
+    height: 93%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #logo {
+    display: none;
+  }
+
+  #header{
+    padding: 60px 0px 25px 30px;
+    font-size: 22px;
+  }
+  #recognize {
+    margin-top: 40px;
+  }
+  #border span {
+   font-size: 15px;
+  }
+  .navBar a {
+    padding: 27px 10px;
+  }
+}
+  @media only screen and (max-width: 500px) {
+    #rightSide {
+      height: 62%;
+    }
+    #strive1 {
+      padding: 0px 14px 0px 14px;
+    }
+    #rightSide2 {
+      height: 62%;
+    }
+    #recognize1 {
+      padding: 0px 14px 0px 14px;
+    }
+    #rightSide3 {
+      height: 62%;
+    }
+    #establish1 {
+      padding: 0px 14px 0px 14px;
+    }
+    #rightSide4 {
+      height: 62%;
+    }
+    #fulfill1 {
+      padding: 0px 14px 0px 14px;
+    }
+    #header{
+      padding: 60px 0px 25px 14px;
+    }
+    #border span {
+    padding-left: 14px;
+    }
+  }

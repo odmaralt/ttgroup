@@ -3,7 +3,7 @@
     padding: 0;
   }
   body {
-    background-color: rgb(31, 31, 31);
+    background-image: url(https://images.pexels.com/photos/1000366/pexels-photo-1000366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   }
   .navBar {
     overflow: hidden;
