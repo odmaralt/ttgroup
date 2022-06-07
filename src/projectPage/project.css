@@ -3,9 +3,8 @@
   padding: 0;
 }
 body {
-  background-image: url(https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-repeat: repeat;
-
+  background-color: rgb(49, 49, 49);
 }
 .navBar {
   overflow: hidden;
@@ -37,19 +36,147 @@ body {
   padding: 40px;
   font-size: 20px;
   color: #f2f2f2;
-  padding-top: 23px;
+  padding-top: 25px;
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 #contactInfo {
-  color: #1a1a1a;
+  color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   justify-content: center;
   margin-top: 50px;
   font-weight: 300;
-  font-size: 40px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  font-size: 34px;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 720px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+.mySlides2 {
+  display: none;
+  margin-bottom: 40px;
+}
+.mySlides3 {
+  display: none;
+  margin-bottom: 120px;
+  margin-top: 50px;
+}
+.mySlides4 {
+  display: none;
+  margin-bottom: 120px;
+  margin-top: 70px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+#images {
+  width: 100%;
+  height: 500px;
+}
+#images2 {
+  width: 100%;
+  height: 540px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .slideshow-container {
+    max-width: 540px;
+  }
+  #images {
+    width: 100%;
+    height: 380px;
+  }
+  #images2 {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    display: none;
+  }
+  .slideshow-container {
+    max-width: 90%;
+  }
+  #images {
+    width: 100%;
+    height: 25%;
+  }
+  #images2 {
+    width: 100%;
+    height: 26%;
+  }
+  #contactInfo {
+    font-size: 25px;
+  }
+  .navBar a {
+    padding: 27px 10px;
+  }
 }
