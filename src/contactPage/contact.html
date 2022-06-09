@@ -8,26 +8,67 @@
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <div class="navBar">
-      <a id="home" href="../homepage/home.html">Home</a>
-      <a href="../projectPage/project.html">Projects</a>
-      <a href="../goalsPage/goals.html">Goals</a>
-      <a href="../servicesPage/services.html">Services</a>
-      <a class="active" href="contact.html">Contact</a>
-      <h1 id="logo">TNT Group</h1>
-    </div>
-    <div id="box">
-      <p id="contactInfo">Contact Us</p>
-      <input id="input" class="type" placeholder="Name"></input>
-      <input  id="input" class="type" placeholder="Phone Number"></input>
-      <input  id="input" class="type" placeholder="Email"></input>
-    <input id="input" class="big"  placeholder="How can we help you?"></input>
-    <div id="bt"> 
+    <div id="container"></div>
 
-      <button class="type" id="submit">Submit</button>
-    </div>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+      // import { firestore } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+      } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+      import {
+        getFirestore,
+        collection,
+        doc,
+        addDoc,
+        setDoc,
+      } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyBBIg7zlMrqgwuwyCR_ZH14Km3NejoPxLw",
+        authDomain: "ttproject-ce36f.firebaseapp.com",
+        projectId: "ttproject-ce36f",
+        storageBucket: "ttproject-ce36f.appspot.com",
+        messagingSenderId: "726513901427",
+        appId: "1:726513901427:web:64927ae08a3b6afc036f06",
+        measurementId: "G-H3M5JB4DKP",
+      };
 
-    </div>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const auth = getAuth();
+      const db = getFirestore(app);
+      const contactCollectionRef = collection(db, "contact");
+      const submitButton = document.getElementById("submit");
+      const name = document.getElementById("name");
+      const phoneNumber = document.getElementById("number");
+      const email = document.getElementById("email");
+      const info = document.getElementById("info");
+
+      submitButton.addEventListener("click", async () => {
+        if (
+          name.value == "" ||
+          phoneNumber.value == "" ||
+          email.value == "" ||
+          info.value == ""
+        ) {
+          return;
+        }
+        await setDoc(doc(contactCollectionRef), {
+          name: name.value,
+          phoneNumber: phoneNumber.value,
+          email: email.value,
+          info: info.value,
+        });
+      });
+    </script>
 
     <script src="contact.js"></script>
   </body>
