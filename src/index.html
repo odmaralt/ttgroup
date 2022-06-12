@@ -70,6 +70,7 @@
             await updateDoc(userRef, {
               lastLoggedIn: lastLoggedIn,
             });
+            window.localStorage.setItem("user", JSON.stringify(true));
             const homePage = document.createElement("a");
             homePage.setAttribute("href", "./homepage/home.html");
             homePage.click();
