@@ -45,9 +45,10 @@ body {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 70px;
   font-weight: 300;
-  font-size: 33px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -63,7 +64,7 @@ body {
 .mySlides {
   display: none;
   margin-bottom: 10px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 .mySlides2 {
   display: none;
@@ -119,13 +120,13 @@ body {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-#images {
+.images {
   width: 100%;
-  height: 480px;
+  height: 440px;
 }
-#images2 {
+.images2 {
   width: 100%;
-  height: 510px;
+  height: 470px;
 }
 
 @keyframes fade {
@@ -141,11 +142,11 @@ body {
   .slideshow-container {
     max-width: 540px;
   }
-  #images {
+  .images {
     width: 100%;
     height: 380px;
   }
-  #images2 {
+  .images2 {
     width: 100%;
     height: 390px;
   }
@@ -163,15 +164,15 @@ body {
     display: none;
   }
   .slideshow-container {
-    max-width: 90%;
+    max-width: 350px;
   }
-  #images {
+  .images {
     width: 100%;
-    height: 25%;
+    height: 250px;
   }
-  #images2 {
+  .images2 {
     width: 100%;
-    height: 26%;
+    height: 270px;
   }
   #contactInfo {
     font-size: 25px;

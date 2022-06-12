@@ -148,7 +148,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   #box {
-    margin: 80px 0px 0px 0px;
+    margin: 80px 20px 0px 20px;
     border: none;
   }
   #contactInfo {
@@ -167,22 +167,25 @@ body {
     padding-right: 20px;
   }
   #name {
-    width: 300px;
+    width: 60%;
   }
   #number {
-    width: 300px;
+    width: 60%;
   }
   #email {
-    width: 300px;
+    width: 60%;
   }
   #info {
-    width: 300px;
+    width: 60%;
   }
   #logo {
     display: none;
   }
   body {
     height: 100vh;
+  }
+  #submit {
+    width: 38%;
   }
 }
 

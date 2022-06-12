@@ -179,9 +179,10 @@ body {
     margin-right: auto;
   }
   #aboutPerson {
-    margin-left: 6%;
-    margin-right: 6%;
-    font-size: 12px;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 11px;
+    margin-top: 0px;
   }
 
   #ourCompany {
