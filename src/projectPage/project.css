@@ -80,6 +80,21 @@ body {
   margin-bottom: 120px;
   margin-top: 70px;
 }
+.mySlides6 {
+  display: none;
+  margin-bottom: 120px;
+  margin-top: 70px;
+}
+.mySlides7 {
+  display: none;
+  margin-bottom: 120px;
+  margin-top: 70px;
+}
+.mySlides8 {
+  display: none;
+  margin-bottom: 120px;
+  margin-top: 70px;
+}
 .prev,
 .next {
   cursor: pointer;
@@ -94,6 +109,13 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 13px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 .next {
   right: 0;
@@ -144,11 +166,11 @@ body {
   }
   .images {
     width: 100%;
-    height: 380px;
+    height: 370px;
   }
   .images2 {
     width: 100%;
-    height: 390px;
+    height: 370px;
   }
   .text {
     font-size: 16px;
@@ -177,8 +199,14 @@ body {
   #contactInfo {
     font-size: 25px;
   }
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+  }
   .navBar a {
-    padding: 27px 10px;
+    padding-top: 26px;
+    font-size: 12px;
+    margin-right: -10px;
   }
   .text {
     font-size: 13px;

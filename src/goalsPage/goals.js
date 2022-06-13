@@ -41,6 +41,7 @@ box.append(border);
 
 const header1 = document.createElement("h1");
 header1.classList.add("header");
+header1.id = "space"
 header1.innerText = "Our Goals";
 border.append(header1);
 
@@ -63,10 +64,10 @@ strives.id = "strive";
 strives.innerText = "Strive";
 goals.append(strives);
 
-const fulfills = document.createElement("span");
-fulfills.id = "fulfill";
-fulfills.innerText = "Fulfill";
-goals.append(fulfills);
+// const fulfills = document.createElement("span");
+// fulfills.id = "fulfill";
+// fulfills.innerText = "Fulfill";
+// goals.append(fulfills);
 
 const rightSide = document.createElement("div");
 rightSide.id = "rightSide";
@@ -80,7 +81,7 @@ rightSide.append(header2);
 const recognize1 = document.createElement("p");
 recognize1.id = "recognize1";
 recognize1.innerText =
-  "Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize. Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize.";
+  "One of our values as a company is to recognize the costumers needs. We believe it is important to communicate customer to contracter to figure out what exactly is needed for the project to be a success. We can assure that T&T group provides excellent price, timeliness, quality, experience and responsiveness.";
 rightSide.append(recognize1);
 
 const rightSide2 = document.createElement("div");
@@ -94,8 +95,7 @@ rightSide2.append(header3);
 
 const establish1 = document.createElement("p");
 establish1.id = "establish1";
-establish1.innerText =
-  "Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize. Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize.";
+establish1.innerText ="After we've talked price range and schedule, we will get started to help your dream become reality."
 rightSide2.append(establish1);
 
 const rightSide3 = document.createElement("div");
@@ -109,24 +109,23 @@ rightSide3.append(header4);
 
 const strive1 = document.createElement("p");
 strive1.id = "strive1";
-strive1.innerText =
-  "Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize. Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize.";
+strive1.innerText = "T&T Group Construction strives for excellence. We pride ourselves in having admirable work quality."
 rightSide3.append(strive1);
 
 const rightSide4 = document.createElement("div");
 rightSide4.id = "rightSide4";
 box.append(rightSide4);
 
-const header5 = document.createElement("p");
-header5.classList.add("header");
-header5.innerText = "Fulfill Needs";
-rightSide4.append(header5);
+// const header5 = document.createElement("p");
+// header5.classList.add("header");
+// header5.innerText = "Fulfill Needs";
+// rightSide4.append(header5);
 
-const fulfill1 = document.createElement("p");
-fulfill1.id = "fulfill1";
-fulfill1.innerText =
-  "Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize. Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize.";
-rightSide4.append(fulfill1);
+// const fulfill1 = document.createElement("p");
+// fulfill1.id = "fulfill1";
+// fulfill1.innerText =
+//   "Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize. Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph recognize Hello paragraph. recognize Hello paragraph recognize Hello paragraph recognize.";
+// rightSide4.append(fulfill1);
 
 const right = document.getElementById("rightSide");
 const right2 = document.getElementById("rightSide2");

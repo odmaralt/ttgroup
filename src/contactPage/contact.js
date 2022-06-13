@@ -45,7 +45,7 @@ contactInfo.innerText = "Contact Us";
 box.append(contactInfo);
 
 const form = document.createElement("FORM");
-form.setAttribute("action", "https://formsubmit.co/oddy976@gmail.com");
+form.setAttribute("action", "https://formsubmit.co/ttgroupllc@yahoo.com");
 form.setAttribute("method", "POST");
 box.append(form);
 
