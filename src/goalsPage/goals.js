@@ -32,12 +32,15 @@ navBar.append(navContact);
 
 const navLogo = document.createElement("h1");
 navLogo.id = "logo";
-navLogo.innerText = "TNT Group";
+navLogo.innerText = "T&T Group";
 navBar.append(navLogo);
 
+const bod = document.createElement("div")
+bod.id = "bod"
+box.append(bod)
 const border = document.createElement("div");
 border.id = "border";
-box.append(border);
+bod.append(border);
 
 const header1 = document.createElement("h1");
 header1.classList.add("header");
@@ -71,7 +74,7 @@ goals.append(strives);
 
 const rightSide = document.createElement("div");
 rightSide.id = "rightSide";
-box.append(rightSide);
+bod.append(rightSide);
 
 const header2 = document.createElement("p");
 header2.classList.add("header");
@@ -86,7 +89,7 @@ rightSide.append(recognize1);
 
 const rightSide2 = document.createElement("div");
 rightSide2.id = "rightSide2";
-box.append(rightSide2);
+bod.append(rightSide2);
 
 const header3 = document.createElement("p");
 header3.classList.add("header");
@@ -100,7 +103,7 @@ rightSide2.append(establish1);
 
 const rightSide3 = document.createElement("div");
 rightSide3.id = "rightSide3";
-box.append(rightSide3);
+bod.append(rightSide3);
 
 const header4 = document.createElement("p");
 header4.classList.add("header");
@@ -114,7 +117,7 @@ rightSide3.append(strive1);
 
 const rightSide4 = document.createElement("div");
 rightSide4.id = "rightSide4";
-box.append(rightSide4);
+bod.append(rightSide4);
 
 // const header5 = document.createElement("p");
 // header5.classList.add("header");

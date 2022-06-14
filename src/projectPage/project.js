@@ -3,38 +3,41 @@ const container = document.getElementById("container");
 const navBar = document.createElement("div");
 navBar.classList.add("navBar");
 container.append(navBar);
-
+const navItems = document.createElement("div");
+navItems.id = "navItems";
+navBar.append(navItems);
 const navHome = document.createElement("a");
 navHome.href = "../homepage/home.html";
 navHome.innerText = "Home";
 
-navBar.append(navHome);
+navItems.append(navHome);
 
 const navProjects = document.createElement("a");
 navProjects.href = "project.html";
 navProjects.innerText = "Projects";
 navProjects.classList.add("active");
-navBar.append(navProjects);
+navItems.append(navProjects);
 
 const navGoals = document.createElement("a");
 navGoals.href = "../goalsPage/goals.html";
 navGoals.innerText = "Goals";
-navBar.append(navGoals);
+navItems.append(navGoals);
 
 const navServices = document.createElement("a");
 navServices.href = "../servicesPage/services.html";
 navServices.innerText = "Services";
-navBar.append(navServices);
+navItems.append(navServices);
 
 const navContact = document.createElement("a");
 navContact.href = "../contactPage/contact.html";
+navContact.id = "contactNav";
 navContact.innerText = "Contact";
-navBar.append(navContact);
-
-const navLogo = document.createElement("h1");
-navLogo.id = "logo";
-navLogo.innerText = "TNT Group";
+navItems.append(navContact);
+navLogo = document.createElement("div");
+navLogo.id = "navLogo";
 navBar.append(navLogo);
+const logo = document.getElementById("logo");
+navLogo.append(logo);
 
 const div1 = document.createElement("div");
 container.append(div1);

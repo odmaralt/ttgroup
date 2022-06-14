@@ -3,51 +3,58 @@
 // // localStorage.removeItem('user')
 
 const container = document.getElementById("container");
-
+const firstPage = document.createElement("div");
+firstPage.id = "firstPage"
+container.append(firstPage)
 const navBar = document.createElement("div");
 navBar.classList.add("navBar");
-container.append(navBar);
-
+firstPage.append(navBar);
+const navItems = document.createElement("div");
+navItems.id = "navItems";
+navBar.append(navItems);
 const navHome = document.createElement("a");
 navHome.href = "home.html";
 navHome.innerText = "Home";
 navHome.classList.add("active");
 
-navBar.append(navHome);
+navItems.append(navHome);
 
 const navProjects = document.createElement("a");
 navProjects.href = "../projectPage/project.html";
 navProjects.innerText = "Projects";
-navBar.append(navProjects);
+navItems.append(navProjects);
 
 const navGoals = document.createElement("a");
 navGoals.href = "../goalsPage/goals.html";
 navGoals.innerText = "Goals";
-navBar.append(navGoals);
+navItems.append(navGoals);
 
 const navServices = document.createElement("a");
 navServices.href = "../servicesPage/services.html";
 navServices.innerText = "Services";
-navBar.append(navServices);
+navItems.append(navServices);
 
 const navContact = document.createElement("a");
 navContact.href = "../contactPage/contact.html";
 navContact.innerText = "Contact";
-navBar.append(navContact);
-
-const navLogo = document.createElement("h1");
-navLogo.id = "logo";
-navLogo.innerText = "TNT Group";
+navContact.id = "contactNav";
+navItems.append(navContact);
+navLogo = document.createElement("div");
+navLogo.id = "navLogo";
 navBar.append(navLogo);
 
-const imgDiv = document.createElement("div");
-container.append(imgDiv);
+const logo = document.getElementById("logo");
+navLogo.append(logo);
 
-const img = document.createElement("img");
-img.id = "img";
-img.src =
-  "https://images.unsplash.com/photo-1606744824163-985d376605aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80";
-imgDiv.append(img);
+const imgDiv = document.createElement("div");
+imgDiv.id = "imgDiv";
+firstPage.append(imgDiv);
+
+// const img = document.createElement("div");
+// img.id = "img";
+// img.src =
+//   "https://images.unsplash.com/photo-1606744824163-985d376605aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80";
+// imgDiv.append(img);
 
 const header = document.createElement("h1");
 header.id = "header";
