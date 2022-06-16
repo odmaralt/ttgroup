@@ -52,19 +52,18 @@ body {
 }
 
 .navBar a:hover {
-  background-color: rgb(255, 255, 255, 0.5);
-  color: rgb(139, 139, 139);
+  background-color: rgba(132, 132, 132, 0.5);
+  color: rgb(255, 255, 255);
 }
 .navBar a.active {
   text-decoration: underline;
   text-decoration-thickness: 2.1px;
-  border-radius: 10px;
   text-underline-offset: 5px;
   color: #1d1d1d;
   padding-left: 20px;
 }
 .navBar a.active:hover {
-  color: rgb(139, 139, 139);
+  color: rgb(255, 255, 255);
 }
 #navItems {
   float: left;
@@ -153,6 +152,7 @@ body {
   #logo {
     font-size: 15px;
     padding-top: 27px;
+    padding-left: 0px;
   }
 }
 @media only screen and (max-width: 600px) {

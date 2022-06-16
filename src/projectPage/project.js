@@ -7,7 +7,7 @@ const navItems = document.createElement("div");
 navItems.id = "navItems";
 navBar.append(navItems);
 const navHome = document.createElement("a");
-navHome.href = "../homepage/home.html";
+navHome.href = "../index.html";
 navHome.innerText = "Home";
 
 navItems.append(navHome);
@@ -18,10 +18,10 @@ navProjects.innerText = "Projects";
 navProjects.classList.add("active");
 navItems.append(navProjects);
 
-const navGoals = document.createElement("a");
-navGoals.href = "../goalsPage/goals.html";
-navGoals.innerText = "Goals";
-navItems.append(navGoals);
+// const navGoals = document.createElement("a");
+// navGoals.href = "../goalsPage/goals.html";
+// navGoals.innerText = "Goals";
+// navItems.append(navGoals);
 
 const navServices = document.createElement("a");
 navServices.href = "../servicesPage/services.html";

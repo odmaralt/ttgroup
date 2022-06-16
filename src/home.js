@@ -13,29 +13,29 @@ const navItems = document.createElement("div");
 navItems.id = "navItems";
 navBar.append(navItems);
 const navHome = document.createElement("a");
-navHome.href = "home.html";
+navHome.href = "index.html";
 navHome.innerText = "Home";
 navHome.classList.add("active");
 
 navItems.append(navHome);
 
 const navProjects = document.createElement("a");
-navProjects.href = "../projectPage/project.html";
+navProjects.href = "./projectPage/project.html";
 navProjects.innerText = "Projects";
 navItems.append(navProjects);
 
-const navGoals = document.createElement("a");
-navGoals.href = "../goalsPage/goals.html";
-navGoals.innerText = "Goals";
-navItems.append(navGoals);
+// const navGoals = document.createElement("a");
+// navGoals.href = "./goalsPage/goals.html";
+// navGoals.innerText = "Goals";
+// navItems.append(navGoals);
 
 const navServices = document.createElement("a");
-navServices.href = "../servicesPage/services.html";
+navServices.href = "./servicesPage/services.html";
 navServices.innerText = "Services";
 navItems.append(navServices);
 
 const navContact = document.createElement("a");
-navContact.href = "../contactPage/contact.html";
+navContact.href = "./contactPage/contact.html";
 navContact.innerText = "Contact";
 navContact.id = "contactNav";
 navItems.append(navContact);

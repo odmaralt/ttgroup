@@ -7,7 +7,7 @@ const navItems = document.createElement("div");
 navItems.id = "navItems";
 navBar.append(navItems);
 const navHome = document.createElement("a");
-navHome.href = "../homepage/home.html";
+navHome.href = "../index.html";
 navHome.innerText = "Home";
 navItems.append(navHome);
 
@@ -16,10 +16,10 @@ navProjects.href = "../projectPage/project.html";
 navProjects.innerText = "Projects";
 navItems.append(navProjects);
 
-const navGoals = document.createElement("a");
-navGoals.href = "../goalsPage/goals.html";
-navGoals.innerText = "Goals";
-navItems.append(navGoals);
+// const navGoals = document.createElement("a");
+// navGoals.href = "../goalsPage/goals.html";
+// navGoals.innerText = "Goals";
+// navItems.append(navGoals);
 
 const navServices = document.createElement("a");
 navServices.href = "../servicesPage/services.html";
@@ -47,7 +47,7 @@ contactInfo.innerText = "Contact Us";
 box.append(contactInfo);
 
 const form = document.createElement("FORM");
-form.setAttribute("action", "https://formsubmit.co/ttgroupllc@yahoo.com");
+form.setAttribute("action", "https://formsubmit.co/huumaa@yahoo.com");
 form.setAttribute("method", "POST");
 box.append(form);
 

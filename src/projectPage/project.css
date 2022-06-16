@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(38, 54, 64);
+  background-color: #303d4b;
 }
 .navBar {
   overflow: hidden;
@@ -30,7 +30,6 @@ body {
 .navBar a.active {
   text-decoration: underline;
   text-decoration-thickness: 2.1px;
-  border-radius: 10px;
   text-underline-offset: 5px;
   color: white;
   padding-left: 20px;
@@ -189,7 +188,7 @@ body {
     padding: 20px;
     padding-top: 23px;
     width: 114px;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) {

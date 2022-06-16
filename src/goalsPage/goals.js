@@ -3,48 +3,50 @@ const box = document.getElementById("box");
 const navBar = document.createElement("div");
 navBar.classList.add("navBar");
 box.append(navBar);
-
+const navItems = document.createElement("div");
+navItems.id = "navItems";
+navBar.append(navItems);
 const navHome = document.createElement("a");
-navHome.href = "../homepage/home.html";
+navHome.href = "../index.html";
 navHome.innerText = "Home";
-navBar.append(navHome);
+navItems.append(navHome);
 
 const navProjects = document.createElement("a");
 navProjects.href = "../projectPage/project.html";
 navProjects.innerText = "Projects";
-navBar.append(navProjects);
+navItems.append(navProjects);
 
-const navGoals = document.createElement("a");
-navGoals.href = "goals.html";
-navGoals.innerText = "Goals";
-navGoals.classList.add("active");
-navBar.append(navGoals);
+// const navGoals = document.createElement("a");
+// navGoals.href = "goals.html";
+// navGoals.innerText = "Goals";
+// navGoals.classList.add("active");
+// navItems.append(navGoals);
 
 const navServices = document.createElement("a");
 navServices.href = "../servicesPage/services.html";
 navServices.innerText = "Services";
-navBar.append(navServices);
+navItems.append(navServices);
 
 const navContact = document.createElement("a");
 navContact.href = "../contactPage/contact.html";
 navContact.innerText = "Contact";
-navBar.append(navContact);
-
+navItems.append(navContact);
+logoNav = document.createElement("div");
+navBar.append(logoNav);
 const navLogo = document.createElement("h1");
 navLogo.id = "logo";
-navLogo.innerText = "T&T Group";
-navBar.append(navLogo);
+logoNav.append(navLogo);
 
-const bod = document.createElement("div")
-bod.id = "bod"
-box.append(bod)
+const bod = document.createElement("div");
+bod.id = "bod";
+box.append(bod);
 const border = document.createElement("div");
 border.id = "border";
 bod.append(border);
 
 const header1 = document.createElement("h1");
 header1.classList.add("header");
-header1.id = "space"
+header1.id = "space";
 header1.innerText = "Our Goals";
 border.append(header1);
 
@@ -98,7 +100,8 @@ rightSide2.append(header3);
 
 const establish1 = document.createElement("p");
 establish1.id = "establish1";
-establish1.innerText ="After we've talked price range and schedule, we will get started to help your dream become reality."
+establish1.innerText =
+  "After we've talked price range and schedule, we will get started to help your dream become reality.";
 rightSide2.append(establish1);
 
 const rightSide3 = document.createElement("div");
@@ -112,7 +115,8 @@ rightSide3.append(header4);
 
 const strive1 = document.createElement("p");
 strive1.id = "strive1";
-strive1.innerText = "T&T Group Construction strives for excellence. We pride ourselves in having admirable work quality."
+strive1.innerText =
+  "T&T Group Construction strives for excellence. We pride ourselves in having admirable work quality.";
 rightSide3.append(strive1);
 
 const rightSide4 = document.createElement("div");
