@@ -103,9 +103,8 @@ body {
 #whiteBox2 {
   width: 46%;
   height: 440px;
-  margin-left: 5%;
   background: #ffffff;
-  transform: matrix(-1, 0, 0, 1, 790, 90);
+  transform: matrix(-1, 0, 0, 1, 760, 90);
 
   border-radius: 9.65909px;
 }
