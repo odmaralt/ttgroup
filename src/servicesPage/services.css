@@ -105,7 +105,7 @@ body {
   height: 440px;
   margin-left: 5%;
   background: #ffffff;
-  transform: matrix(-1, 0, 0, 1, 800, 90);
+  transform: matrix(-1, 0, 0, 1, 790, 90);
 
   border-radius: 9.65909px;
 }
