@@ -54,17 +54,20 @@ body {
   width: 100%;
   height: 633px;
   object-fit: cover;
+  border-radius: 9.65909px;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+
   background: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 105.21%
     ),
-    url(https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/288685009_3228833834029081_912992861381634275_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=4LTBS1HiiDQAX8aSTVl&_nc_ht=scontent-sea1-1.xx&oh=00_AT_r423VNt7_Fs_bCgY3qR6dZrYwabzBHo8kvy7h2YFJQQ&oe=62AF47F9);
-  border-radius: 9.65909px;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    url(https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: center;
 }
+
 #secondImg {
   width: 100%;
   height: 633px;
@@ -74,10 +77,12 @@ body {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 105.21%
     ),
-    url(https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/288750016_3228833824029082_8308825591074149018_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=ztKqhwSKJOAAX8-osd3&tn=776H95RyHFaYhH4_&_nc_ht=scontent-sea1-1.xx&oh=00_AT_teQlON6eFFPneDj-nz501NWpwj0p25qA_JuxlITP4-g&oe=62B06319);
+    url(https://s3-alpha-sig.figma.com/img/9e5f/27a9/aa17abf697c9bb1efd4b78be9e75008e?Expires=1656892800&Signature=GtKoOMohjo70CbUKckV6CFmbxSzCyX9e7839v~5AZgdRHECWq2oOrW1W56agXl61H9xJ8-8sQ3~Lr2u3keV~j7h7bpsyg~E7dfNyytUNnhXTpZW71iIPvP2oZCgkUaCdltJFFLINQ~UhYVRiSMlhTxf6kVdquPDXdCwvO5mTXlYEH21-gAaIM6l8wZmydi~3f4svn1wGS9vIxxqesUQMbXVUBNn8snd4sXvKH58Slq3T1QHr59WHnGQeNOFBvp-UVzBLWhmLeBs64PBQovAq47tPixaXtJ~jdGdKVMV95vwnfZ6Ah5rZ5cA08qJejIZeiioO9hTWw1JHj1FtR5nkjQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
   border-radius: 9.65909px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 #thirdImg {
@@ -89,18 +94,19 @@ body {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 105.21%
     ),
-    url(https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/288664908_3228833867362411_5109608504257850341_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=0OgvvYkazlUAX8wgp3K&tn=776H95RyHFaYhH4_&_nc_ht=scontent-sea1-1.xx&oh=00_AT-7hII31Nz2wGLL-nnvr21-oU4YcIhjGsNGEgw9HU3cPw&oe=62AFD335);
+    url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80);
   background-repeat: no-repeat;
   border-radius: 9.65909px;
   background-size: cover;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 #whiteBox2 {
   width: 46%;
   height: 440px;
   margin-left: 5%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(25%);
   background: #ffffff;
+  transform: matrix(-1, 0, 0, 1, 800, 90);
+
   border-radius: 9.65909px;
 }
 #whiteBox1 {
@@ -115,11 +121,9 @@ body {
 #whiteBox3 {
   width: 46%;
   height: 440px;
-  margin-left: 49%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(25%);
   background: #ffffff;
   border-radius: 9.65909px;
+  transform: matrix(-1, 0, 0, 1, 70, 90);
 }
 #remodeling {
   font-family: "Inter";
@@ -200,12 +204,16 @@ body {
   }
   #whiteBox2 {
     height: 229px;
+    transform: matrix(-1, 0, 0, 1, 320, 65);
+
   }
   #whiteBox3 {
     height: 229px;
+    transform: matrix(-1, 0, 0, 1, 50, 65);
+
   }
   #remodelingParagraph {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -214,7 +222,7 @@ body {
     padding: 40px 0px 15px 30px;
   }
   #customHomeParagraph {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -223,7 +231,7 @@ body {
     padding: 40px 0px 15px 30px;
   }
   #commercialParagraph {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -249,8 +257,12 @@ body {
   }
   #whiteBox2 {
     height: 120px;
+    transform: matrix(-1, 0, 0, 1, 114, 30);
+
   }
   #whiteBox3 {
+    transform: matrix(-1, 0, 0, 1, -116, 32);
+
     height: 120px;
   }
   #remodelingParagraph {
@@ -292,6 +304,10 @@ body {
   #logo {
     display: none;
   }
+  #firstPage{
+    height: 60vh;
+  
+  }
 }
 @media only screen and (max-width: 500px) {
   #whiteBox1 {
@@ -314,4 +330,5 @@ body {
   }
   #commercialParagraph {
     font-size: 7px;
-  }}
+  }
+}

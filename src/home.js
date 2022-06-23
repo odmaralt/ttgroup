@@ -65,26 +65,26 @@ const secondPart = document.createElement("div");
 secondPart.id = "secondPart";
 container.append(secondPart);
 
-const ourTeam = document.createElement("h1");
-ourTeam.id = "ourTeam";
-ourTeam.innerText = "Our Team";
-secondPart.append(ourTeam);
+// const ourTeam = document.createElement("h1");
+// ourTeam.id = "ourTeam";
+// ourTeam.innerText = "Our Team";
+// secondPart.append(ourTeam);
 
-const flex = document.createElement("div");
-flex.id = "flex";
-secondPart.append(flex);
+// const flex = document.createElement("div");
+// flex.id = "flex";
+// secondPart.append(flex);
 
-const personImg = document.createElement("img");
-personImg.id = "person";
-personImg.src =
-  "https://powerusers.microsoft.com/t5/image/serverpage/image-id/98171iCC9A58CAF1C9B5B9/image-size/large/is-moderation-mode/true?v=v2&px=999";
-flex.append(personImg);
+// const personImg = document.createElement("img");
+// personImg.id = "person";
+// personImg.src =
+//   "https://powerusers.microsoft.com/t5/image/serverpage/image-id/98171iCC9A58CAF1C9B5B9/image-size/large/is-moderation-mode/true?v=v2&px=999";
+// flex.append(personImg);
 
-const aboutPerson = document.createElement("p");
-aboutPerson.id = "aboutPerson";
-aboutPerson.innerText =
-  "Tumenjargal is a capable leader and a skilled contractor. With 8+ years of experience, his work is excellent and precise. He values his customers wants and needs to guarantee their satisfaction. Tumenjargal, his wife, and 4 kids have lived in Washington for 8 years.";
-flex.append(aboutPerson);
+// const aboutPerson = document.createElement("p");
+// aboutPerson.id = "aboutPerson";
+// aboutPerson.innerText =
+//   "Tumenjargal is a capable leader and a skilled contractor. With 8+ years of experience, his work is excellent and precise. He values his customers wants and needs to guarantee their satisfaction. Tumenjargal, his wife, and 4 kids have lived in Washington for 8 years.";
+// flex.append(aboutPerson);
 
 const thirdPart = document.createElement("div");
 thirdPart.id = "thirdPart";
