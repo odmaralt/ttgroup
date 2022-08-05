@@ -53,8 +53,12 @@ whiteBox1.append(remodeling);
 
 const remodelingParagraph = document.createElement("p");
 remodelingParagraph.id = "remodelingParagraph";
-remodelingParagraph.innerText =
-  "Renovating is not an easy task. Tumenjargal has extensive experience with replacing flooring, removing walls, adding rooms, rebuilding and working around existing structures. Tumenjargal brings a level of expertise for problem solving on the spot and overcoming the challenges of the unexpected.";
+remodelingParagraph.innerText = `We understand that renovating isn't an easy task. In order to best satisfy your needs, we promise you excellence. 
+T&T Group has extensive experience  
+- replacing flooring 
+- removing walls
+- adding rooms
+- rebuilding + working around existing structures`;
 whiteBox1.append(remodelingParagraph);
 
 const secondImg = document.createElement("div");
@@ -73,7 +77,7 @@ whiteBox2.append(commercial);
 const commercialParagraph = document.createElement("p");
 commercialParagraph.id = "commercialParagraph";
 commercialParagraph.innerText =
-  "With over 8 years as a Construction Project Manager, Tumenjargal has the experience you need to complete your project with the finest craftsmanship. Additionally, Tumenjargal has outstanding leadership that allows the project timeline to run smooth and efficiently. His experience spans across a wide spectrum of buildings from small commercial buildings to mid-rise residential buildings.";
+  "Our goal is serving happy customers with the finest craftsmanship. Whether it may be small commercial buildings or mid-rise residential buildings, we promise you will be satisfied.";
 whiteBox2.append(commercialParagraph);
 
 const thirdImg = document.createElement("div");
@@ -92,5 +96,5 @@ whiteBox3.append(customHome);
 const customHomeParagraph = document.createElement("p");
 customHomeParagraph.id = "customHomeParagraph";
 customHomeParagraph.innerText =
-  "When it comes to building your dream home you can expect excellence from T&T Group Construction. We understand the importance of detail and beauty so you can expect your wants and needs to be fulfilled. You are our first priority. With tons of experience in construction, you can trust that Tumenjargal will make your dream become reality. With your ambition and our expertise, let's build your dream home!";
+  "When it comes to building your dream home, we guarantee you will receive nothing but excellence. We understand the importance of detail and beauty, so you can expect your wants and needs to be fulfilled. You are our top priority. With your ambition and our expertise(or skill), let's build your dream home!";
 whiteBox3.append(customHomeParagraph);
