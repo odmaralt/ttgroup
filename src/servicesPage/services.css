@@ -60,7 +60,7 @@ body {
   background: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 105.21%
+      rgba(0, 0, 0, 0) 80.21%
     ),
     url(https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   background-repeat: no-repeat;
@@ -75,14 +75,14 @@ body {
   background: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 105.21%
+      rgba(0, 0, 0, 0) 10.21%
     ),
-    url(https://s3-alpha-sig.figma.com/img/9e5f/27a9/aa17abf697c9bb1efd4b78be9e75008e?Expires=1656892800&Signature=GtKoOMohjo70CbUKckV6CFmbxSzCyX9e7839v~5AZgdRHECWq2oOrW1W56agXl61H9xJ8-8sQ3~Lr2u3keV~j7h7bpsyg~E7dfNyytUNnhXTpZW71iIPvP2oZCgkUaCdltJFFLINQ~UhYVRiSMlhTxf6kVdquPDXdCwvO5mTXlYEH21-gAaIM6l8wZmydi~3f4svn1wGS9vIxxqesUQMbXVUBNn8snd4sXvKH58Slq3T1QHr59WHnGQeNOFBvp-UVzBLWhmLeBs64PBQovAq47tPixaXtJ~jdGdKVMV95vwnfZ6Ah5rZ5cA08qJejIZeiioO9hTWw1JHj1FtR5nkjQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    url("image.png");
   border-radius: 9.65909px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #thirdImg {
@@ -92,7 +92,7 @@ body {
   background: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 105.21%
+      rgba(0, 0, 0, 0) 70.21%
     ),
     url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80);
   background-repeat: no-repeat;
@@ -104,8 +104,7 @@ body {
   width: 46%;
   height: 440px;
   background: #ffffff;
-  transform: matrix(-1, 0, 0, 1, 760, 90);
-
+  transform: matrix(1, 0, 0, 1, 70, 90);
   border-radius: 9.65909px;
 }
 #whiteBox1 {
@@ -114,6 +113,7 @@ body {
   margin-left: 49%;
   -ms-transform: translateY(-50%);
   transform: translateY(25%);
+  transform: translateX(-1);
   background: #ffffff;
   border-radius: 9.65909px;
 }
@@ -204,12 +204,10 @@ body {
   #whiteBox2 {
     height: 229px;
     transform: matrix(-1, 0, 0, 1, 320, 65);
-
   }
   #whiteBox3 {
     height: 229px;
     transform: matrix(-1, 0, 0, 1, 50, 65);
-
   }
   #remodelingParagraph {
     font-size: 11px;
@@ -257,7 +255,6 @@ body {
   #whiteBox2 {
     height: 120px;
     transform: matrix(-1, 0, 0, 1, 114, 30);
-
   }
   #whiteBox3 {
     transform: matrix(-1, 0, 0, 1, -116, 32);
@@ -303,9 +300,8 @@ body {
   #logo {
     display: none;
   }
-  #firstPage{
+  #firstPage {
     height: 60vh;
-  
   }
 }
 @media only screen and (max-width: 500px) {

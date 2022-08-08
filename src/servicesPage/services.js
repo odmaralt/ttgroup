@@ -53,8 +53,8 @@ whiteBox1.append(remodeling);
 
 const remodelingParagraph = document.createElement("p");
 remodelingParagraph.id = "remodelingParagraph";
-remodelingParagraph.innerText = `We understand that renovating isn't an easy task. In order to best satisfy your needs, we promise you excellence. 
-T&T Group has extensive experience  
+remodelingParagraph.innerText = `We understand that renovating isn't an easy task.
+T&T Group provides 
 - replacing flooring 
 - removing walls
 - adding rooms
@@ -77,7 +77,7 @@ whiteBox2.append(commercial);
 const commercialParagraph = document.createElement("p");
 commercialParagraph.id = "commercialParagraph";
 commercialParagraph.innerText =
-  "Our goal is serving happy customers with the finest craftsmanship. Whether it may be small commercial buildings or mid-rise residential buildings, we promise you will be satisfied.";
+  "Our goal is to serve happy customers with the finest craftsmanship. We guarantee you excellence on any job you need done, whether it may be in small commercial buildings or mid-rise residential buildings.";
 whiteBox2.append(commercialParagraph);
 
 const thirdImg = document.createElement("div");
@@ -96,5 +96,5 @@ whiteBox3.append(customHome);
 const customHomeParagraph = document.createElement("p");
 customHomeParagraph.id = "customHomeParagraph";
 customHomeParagraph.innerText =
-  "When it comes to building your dream home, we guarantee you will receive nothing but excellence. We understand the importance of detail and beauty, so you can expect your wants and needs to be fulfilled. You are our top priority. With your ambition and our expertise(or skill), let's build your dream home!";
+  "When it comes to building your dream home, you deserve the finest quality. We understand the importance of detail and beauty, so you can expect your wants and needs to be fulfilled. You are our top priority. Let's build your dream home together!";
 whiteBox3.append(customHomeParagraph);
